@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+}
+
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: linear-gradient(50deg, #433ca0 10%, #4ec3c9);
+  color: #ffffff;
+  font-family: "Courier New", "Courier", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.numbers {
+  display: flex;
+}
+
+.container-number-one div:nth-child(1) {
+  background: #ffffff;
+  height: 50px;
+  width: 22px;
+  translate: -12px 49px;
+  rotate: 50deg;
+  position: relative;
+  border-radius: 4px;
+  opacity: 0.9;
+}
+
+.container-number-one div:nth-child(2) {
+  border-radius: 4px;
+  background: #ffffff;
+  height: 100px;
+  width: 25px;
+  z-index: 3;
+  position: relative;
+  left: 8px;
+  box-shadow: 30px 0 100px rgba(0, 0, 0, 0.5);
+}
+
+.numbers-zeros {
+  display: flex;
+  font-size: 10rem;
+  font-weight: 600;
+  align-items: end;
+  line-height: 90px;
+  letter-spacing: -15px;
+}
+
+.numbers-zeros p:nth-child(1) {
+  position: relative;
+  z-index: 2;
+  border-radius: 50%;
+  box-shadow: 30px 0 100px rgba(0, 0, 0, 0.5);
+}
+
+.numbers-zeros p:nth-child(2) {
+  position: relative;
+  z-index: 1;
+}
+
+.text {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.text-small {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
